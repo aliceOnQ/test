@@ -1,0 +1,86 @@
+/* RWD Container */
+#container {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin-right:200px ;
+  margin-left:200px;
+
+}
+
+@media (min-width: 768px) {
+#container {
+  width: 768px;
+}
+.slick-list{
+  width:200px;
+height: 300px;
+
+}
+} 
+
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+
+}
+#mainLayout {
+  display: grid;
+  min-height: 100vh;
+ 
+  grid-template-areas: 
+    "Header"
+    "carousel"
+    "Container"
+    "Footer"
+  ;
+  grid-template-rows: auto auto 1fr auto;
+gap: 1px;
+}
+
+#mainLayout > layoutHeader {
+  grid-area: Header;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+
+}
+#mainLayout > layoutcarousel {
+  grid-area: Header;
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+
+}
+
+#mainLayout>layoutFooter {
+  grid-area: Footer;
+  padding: 0;
+  height: 1fr;
+  line-height: 1.6;
+
+}
+
+#mainLayout>layoutContent {
+  grid-area:Container;
+
+}
+/* carousel */
+.slick-list{
+  width:2000px;
+height: 300px;
+
+}
+.slick-arrow{
+  right: -100px;
+}
+.slick-dots li.slick-active button:before{
+color:rgb(134, 134, 134) !important;
+
+}
+.slick-dots li button:before{
+color:rgb(255, 255, 255) !important;
+font-size: 1rem !important;
+top:2rem !important;
+}

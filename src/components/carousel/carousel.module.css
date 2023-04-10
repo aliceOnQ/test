@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.carousel{
+padding: 3.8rem;
+background-color: black;
+color: #f0f8ff;
+}
+.box{
+height: auto;
+width: 300px;
+}
+.image {
+  /* width: 100%; */
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1%;
+  margin-bottom: 0;
+  padding: 3px;
+  padding-left: 1px;
+  padding-bottom: 1px;
+  background-color: rgb(130, 130, 130);
+}
+.new{
+  font-size: 3rem;
+  display: flex;
+
+}
